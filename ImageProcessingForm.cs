@@ -359,11 +359,11 @@ namespace ImageProcessing
             Bitmap imageResized = new Bitmap(picOriLoaded);
             if (pictureBox2.Image != null && chkBoxCumulateProcessing.Checked == true)
             {
-                picOriProcessed = Processing.OutlineColor(picOriProcessed, 1, 8);
+                picOriProcessed = Processing.OutlineColor(picOriProcessed, 1, 3);
             }
             else
             {
-                picOriProcessed = Processing.OutlineColor(picOriLoaded, 1, 8);
+                picOriProcessed = Processing.OutlineColor(picOriLoaded, 1, 3);
             }
             imageResized = Processing.ResizeImageForPreview(picOriProcessed, displaySize);
             if (displaySize.Width < imageResized.Width || displaySize.Height < imageResized.Height)
